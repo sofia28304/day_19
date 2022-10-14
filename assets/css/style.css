@@ -1,0 +1,316 @@
+/* Farben: #2B2C2E / #9FA2A7 / #27282A / #848689 / #3D3E41 / #fff
+● Fonts: Graphik, TiemposHeadline, Theinhardt */
+
+
+/* DIE MOBILE VERSION IST DESIGNED FÜR EINE BILDSCHIRMWEITE VON CA 418PX!!! 
+Ich nehme als Breakingpoints: 419px, 962px, 1024px */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "graphikMedium";
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: "graphikRegular";
+    src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: "theinhardt";
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+@font-face {
+    font-family: "tiempos";
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+.graphikMedium {
+    font-family: "graphikMedium";
+}
+
+.graphikRegular {
+    font-family: "graphikRegular";
+}
+
+.theinhardt {
+    font-family: "theinhardt";
+}
+
+.tiempos {
+    font-family: "tiempos";
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    margin: 10px;
+}
+
+/* HEADER*/
+/* Der Header gefällt mir so eigentlich nicht aber ich lasse es jetzt aus Zeitgründen so.  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul li {
+    margin: 10px 3px;
+    list-style: none;
+}
+
+.logo {
+    justify-content: center;
+    margin: 30px auto;
+}
+
+header button {
+    width: 90px;
+    height: 35px;
+    margin: auto 0;
+}
+
+/* MAIN */
+/* 1.Abschnitt */
+.firstTop {
+    justify-content: center;
+    width: 80vw;
+    margin: 10% auto;
+}
+
+.hero {
+    width: 100%;
+    margin: 10% 0;
+}
+
+.reviewBlock {
+    display: flex;
+    margin: 0 0 10% 0;
+    /* background-color: aqua; */
+}
+
+.weWillReview {
+    width: 70%;
+    /* background-color: red; */
+}
+
+.preisListe {
+    width: 30%;
+    align-content: flex-end;
+    /* background-color: blue; */
+}
+
+.preis {
+    font-size: 2.5rem;
+    padding: 2vh 0 2vh 3vw;
+    /* background-color: yellow; */
+}
+
+.preisKomm {
+    padding: 0 0 0 3vw;
+    color: #3D3E41;
+}
+
+/* 2. Abschnitt */
+.deliverables {
+    margin: 0 0 10% 0;
+}
+
+.deliverablesBlock {
+    margin: 3% 0;
+    /* background-color: blueviolet; */
+}
+
+.ueberschrift {
+    margin: 4px auto;
+}
+
+/* 3.Abschnitt */
+.grau {
+    background-color: #9FA2A7;
+    padding: 1% 2%;
+    margin: 0 0 10% 0;
+}
+
+.graueListe {
+    color: #3D3E41;
+    margin-left: 8%;
+}
+
+.grauerText {
+    color: #3D3E41;
+}
+
+/* 4. Abschnitt */
+.critique {
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #9FA2A7;
+}
+
+.critiqueTitel {
+    text-align: center;
+    margin: 0 0 4% 0;
+}
+
+.critiqueText {
+    text-align: center;
+    color: #3D3E41;
+    padding: 5% 0;
+
+}
+
+/* .imgBlockCritique {
+    display: flex;
+} */
+
+.imgBlockCritique img {
+    /* width: 50%; */
+}
+
+/* Footer */
+.footerTitel {
+    text-align: center;
+    margin: 4% 0 0 0;
+}
+
+.footerBild {
+    width: 30%;
+}
+
+.endzeile {
+    display: flex;
+}
+
+.endzeile p {
+    text-align: center;
+    padding: 20% 0;
+
+}
+
+/* Design for mobile displays from 360×640 through 414×896
+Design for tablet displays from 601×962 through 1280×800
+Design for desktop displays from 1024×768 through 1920×1080
+aus https://www.hobo-web.co.uk/best-screen-size/ 
+Ich nehme als Breakingpoints: 419px, 962px, 1024px */
+
+@media only screen and (min-width: 419px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    /* .headerNav {
+        display: inline-flex;
+        width: 30%;
+    } */
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    header button {
+        width: 60px;
+        height: 30px;
+        /* font-size: 0.7rem; */
+        margin: auto 0;
+    }
+
+    .firstTop {
+        width: 80vw;
+        margin: 3% auto;
+    }
+
+    .hero {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .reviewBlock {
+        display: flex;
+        margin: 0 0 3% 0;
+        align-items: center;
+    }
+
+    .weWillReview {
+        width: 70%;
+        /* align-content: center; */
+    }
+
+    .preis {
+        font-size: 2.5rem;
+        padding: 0 0 1vh 3vw;
+    }
+
+    /* 2. Abschnitt */
+    .deliverables {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .deliverables img {
+        width: 50%;
+        height: 50%;
+        display: flex;
+    }
+
+    /* 3. Abschnitt */
+    .grau {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .grau img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .crituqueText {
+        width: 50%;
+        text-align: center;
+        margin: 3% auto;
+    }
+
+    /* 4.Abschnitt  */
+    .rollerGuyBox {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -4vh;
+    }
+
+    .rollerguyImg {
+        width: 50vw;
+        height: 50%;
+    }
+
+    /* footer */
+    .endzeile {
+        height: 80px;
+        width: 300px;
+        display: flex;
+        align-items: flex-end;
+        margin: 0 auto;
+    }
+
+    .endzeile p {
+        padding: 0;
+        /* justify-content: baseline; */
+    }
+
+    .footerBild {
+        width: 20%;
+        /* height: 40%; */
+    }
+}
